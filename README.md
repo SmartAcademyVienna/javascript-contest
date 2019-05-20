@@ -28,6 +28,7 @@ TODO are:
 - Calculate how much hours are left.
 - Calculate how much minutes are left.
 - Calculate how much seconds are left.
+- WHEN FINISHED then send the missing parts only on the following email 'ahmedbazy@gmail.com' As a smart academy instructor, i will review them my self.
 
 When are calculated then a nice function will be called `setDigit(days + hours + mins + secs);` which is taking all calculated time as string then render it to the HTML.
 
