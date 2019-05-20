@@ -16,6 +16,14 @@ $ git clone https://github.com/SmartAcademyVienna/javascript-contest.git
 $ npm install
 ```
 
+3. To run the application then use:
+
+```bash
+$ npm run serve
+```
+
+That will open a nwe browser tab and watch your changes of code.
+
 ## Requirements
 
 There is a missing functionality in the application "Smart Academy Time Machine" which is responsible to show the time by days,hours,minuets, seconds. The function is missing just few line which are responsible to get the difference time from 6.6.2019 and the current day.
