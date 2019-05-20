@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --width: 1.8vmin;
+  --len: 8vmin;
+  --color: #4b80ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #000;
+}
+
+.smartAcademy {
+  color: white;
+  margin-bottom: 10rem;
+  font-size: 5rem;
+}
+
+span {
+  color: white;
+  font-size: 3rem;
+  color: #ff4b4b;
+}
+.digital-clock .day1,
+.digital-clock .day2 {
+  --color: #ff4b4b;
+  --width: 7vmin;
+}
+
+.digital-clock .colon {
+  position: relative;
+  margin: calc(var(--width) + 1vmin);
+}
+
+.digital-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.digital-clock .colon::before,
+.digital-clock .colon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: var(--width);
+  height: var(--width);
+  background: var(--color);
+}
+
+.digital-clock .colon::before {
+  top: calc(0vmin - var(--len) / 2);
+}
+
+.digital-clock .colon::after {
+  bottom: calc(0vmin - var(--len) / 2);
+}
+
+.digital-clock .digit {
+  position: relative;
+  width: var(--len);
+  margin: calc(var(--width) + 1vmin);
+}
+
+.digital-clock .sec {
+  display: flex;
+  margin: var(--len) calc(0vmin - var(--len) * 2) 0 var(--width);
+  transform: scale(0.5);
+  transform-origin: 0 100%;
+}
+
+.digital-clock .stick {
+  --half-width: calc(var(--width) / 2);
+  --origin-left: calc(0vmin - var(--half-width));
+  --origin-right: calc(var(--len) + var(--half-width));
+  position: absolute;
+  width: var(--len);
+  height: var(--width);
+  background: var(--color);
+  border-radius: 11% / 15%;
+  transition: transform 0.4s;
+}
+
+.digital-clock .stick::before,
+.digital-clock .stick::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border: var(--half-width) solid transparent;
+}
+
+.digital-clock .stick::before {
+  right: 98%;
+  border-right: var(--half-width) solid var(--color);
+}
+
+.digital-clock .stick::after {
+  left: 98%;
+  border-left: var(--half-width) solid var(--color);
+}
+
+.digital-clock .stick.one {
+  transform-origin: var(--origin-right) 50%;
+  transform: rotate(90deg);
+}
+
+.digital-clock .stick.two {
+  transform-origin: var(--origin-right) 50%;
+  transform: rotate(270deg);
+}
+
+.digital-clock .stick.three {
+  transform-origin: var(--origin-left) 50%;
+  transform: rotate(90deg);
+}
+
+.digital-clock .stick.four {
+  transform-origin: var(--origin-left) 50%;
+  transform: rotate(270deg);
+}
+
+.digital-clock .stick.five {
+  transform-origin: var(--origin-right) 50%;
+  transform: rotate(270deg);
+}
+
+.digital-clock .stick.six {
+  transform-origin: var(--origin-right) 50%;
+  transform: rotate(0deg);
+}
+
+.digital-clock .stick.seven {
+  transform-origin: var(--origin-right) 50%;
+  transform: rotate(90deg);
+}
