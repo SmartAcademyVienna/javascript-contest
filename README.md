@@ -22,6 +22,7 @@ There is a missing functionality in the application "Smart Academy Time Machine"
 
 TODO are:
 
+- First of all, all changes should be only at **`src/js/index.js`** which has a line `// YOUR CODE HERE` afn deom that line you start your code.
 - Get total milliseconds of the time difference (between those dates of 6.6.2019 and the current date).
 - Calculate how much days are left.
 - Calculate how much hours are left.
